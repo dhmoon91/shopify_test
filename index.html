@@ -1,0 +1,38 @@
+<!DOCTYPE= html>
+<html lang="en">
+<head>
+	<title> Shopify Shop calculator </title>
+	<meta charset= "utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  	<script src="js/rest.js"></script>
+  		<style>
+  		.container{
+  			padding: 80px 120px;
+  		}
+
+  		.bg-1 {
+    background: #2d2d30;
+      color: #bdbdbd;
+  }
+  		</style>
+</head>
+
+
+<body id="myPage" class= "bg-1" data-spy="scroll" data-target=".navbar" data-offset="50">
+	<div class="bg-1">
+  		<div id= "link" class="container">
+    	<h3 class="text-center">Calculate Price of Watches & Clocks</h3>
+		<p class="text-center">Only works once for each click.</p>
+    	<button id="watch" class="list-group-item list-group-item-info" onclick="restClockGet()" ><span class="label label-primary"> Clock!<span id="C_Total"> </span></button>
+    	<button id-"clock" class="list-group-item list-group-item-success" onclick="restWatchGet()" ><span class= "label label-success"> Watch!<span id="W_Total"> </span></button>
+    	<button id="watch" class="list-group-item list-group-item-danger" onclick="restTotalGet()" ><span class="label label-danger">ALL of Watches and Clocks TOTAL! <span id="Total"> </span></button>
+  	</div>
+
+  	<div id="Total"></div>
+</div>
+
+</body>
+</html>
